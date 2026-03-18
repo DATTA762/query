@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+
+langchain
+langchain-community
+langchain-huggingface
+
+sentence-transformers
+transformers
+torch
+
+faiss-cpu
+
+groq
+python-dotenv
