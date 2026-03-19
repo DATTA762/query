@@ -24,6 +24,10 @@ if not GROQ_API_KEY:
 app = FastAPI(title="Render RAG API")
 os.environ["HUGGINGFACE_HUB_TOKEN"] = os.getenv("HF_TOKEN")
 
+@app.get("/")
+def read_root():
+    return {"message": "Hello World"}
+
 # Request schema
 class QueryRequest(BaseModel):
     query: str
